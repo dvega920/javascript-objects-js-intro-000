@@ -8,5 +8,7 @@ return playlist
 }
 
 function removeFromPlaylist(playlist, artistname){
-  playlist = "";
+
+  delete playlist[artistname];
+  return playlist;
 }
